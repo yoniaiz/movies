@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.4/js/bootstrap-datepicker.js"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.4/css/bootstrap-datepicker.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+    crossorigin="anonymous">
+
+  <link rel="stylesheet" href="./omdb.css">
+  <title>omdb</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#"><i id="tvIcon" class="fas fa-tv"></i></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class=" nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="mt-2 nav-item dropdown">
+          <span class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false">Type</span>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <span class="dropdown-item">Movie</span>
+            <span class="dropdown-item">Series</span>
+            <span class="dropdown-item">Episode</span>
+            <div class="dropdown-divider"></div>
+            <span class="dropdown-item">Reset</span>
+          </div>
+        </li>
+        <li class="nav-item">
+          <input type="text" id="datepicker" placeholder="Year:" />
+        </li>
+      </ul>
+      <div class="col-4">
+        <div class="input-group">
+          <input id="searchMovie" type="text" class="form-control">
+          <p><i id="searchIcon" class="fas fa-search" onclick="searchMovie()"></i></p>
+        </div>
+      </div>
+  </nav>
+  <div class="ml-4 container-fluid">
+    <div id="movies" class="ml-5 row">
+
+    </div>
+  </div>
+
+  <script src="./omdb.js"></script>
+</body>
+
+</html>

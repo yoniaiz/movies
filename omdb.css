@@ -1,0 +1,117 @@
+body{
+    background-color: #24282c;
+    padding: 0;
+    margin: 0;
+}
+
+#tvIcon {
+    font-size: 40px;
+    transition: 0.1s;
+}
+#tvIcon:hover{
+    font-size: 42px;
+    color: #3AD48C !important;
+}
+#searchIcon {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 30px;
+    margin-top: 35%;
+    transition: 0.1s;
+}
+
+#searchIcon:hover {
+    font-size: 32px;
+    color: #3AD48C !important;
+}
+
+#searchMovie {
+    background-color: transparent;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom-style: groove;
+    font-size: 20px;
+    margin-top: 14px;
+    padding: 15px;
+    color: white;
+}
+
+#searchMovie::placeholder {
+    color: white;
+}
+
+#searchMovie:focus {
+    border-color: rgba(212, 63, 58, 0.8);
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0.075) inset, 0 0 0 rgba(212, 63, 58, 0.6);
+}
+
+
+#datepicker {
+    background-color: transparent;
+    width: 80px;
+    margin-top: 14px;
+    margin-left: 8px;
+    color: white;
+    font-size: 20px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom-style: groove;
+    text-align: center;
+}
+
+#datepicker:focus {
+    outline-width: 0;
+    border-color: rgba(212, 63, 58, 0.8);
+    color: rgba(212, 63, 58, 0.8);
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0.075) inset, 0 0 0 rgba(212, 63, 58, 0.6);
+}
+#datepicker:focus::placeholder{
+    color: rgba(212, 63, 58, 0.5);
+}
+#datepicker::placeholder {
+    text-align: left;
+}
+a {
+    font-size: 22px;
+    margin: 6px;
+}
+span {
+    margin-top: 6px;
+    font-size: 20px;
+}
+.img-thumbnail{
+    height: 70%;
+}
+.description{
+    color: white;
+    font-size: 2vw;
+    word-break: break-all;
+    padding: 20px;
+    text-align: center;
+    position: absolute;
+    height: 70%;
+    width: 88%;
+    background-color: #1d2124;
+    opacity: 0;
+    z-index: 100;
+    transition: 0.3s;
+    overflow: hidden;
+    resize: none;
+}
+.description:hover{
+    opacity: 0.8;
+    overflow:auto;
+}
+
+.description::-webkit-scrollbar {
+    width: 9px;
+    background-color: none;
+}
+
+.description::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+    background-color: #5d9b9b;
+}
